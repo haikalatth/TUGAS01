@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     EditText etUmur;
     Button bDaftar;
     TextView tvHasil;
-    EditText etAD;
     Spinner spKelas;
     RadioGroup rgStatus;
 
@@ -57,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
         int umur = Integer.parseInt(etUmur.getText().toString());
 
 
-        tvHasil.setText(nama + " " + umur + " tahun" + " kelas" + spKelas.getSelectedItem().toString() + "\n" + "Siap mengikuti palwaga");
+        tvHasil.setText(nama + " " + umur + " tahun" + " kelas" + spKelas.getSelectedItem().toString() + "\n" + "Siap mengikuti palwaga divisi");
     }
 }
