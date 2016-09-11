@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvHasil;
     EditText etAD;
     Spinner spKelas;
+    RadioGroup rgStatus;
 
 
     @Override
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         bDaftar = (Button) findViewById(R.id.buttonDaftar);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
         spKelas = (Spinner) findViewById(R.id.spinnerKelas);
+        rgStatus = (RadioGroup) findViewById(R.id.radioGroupStatus);
 
         bDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,8 +44,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void doProcess() {
+        String hasil = null;
+        if (rgStatus.getCheckedRadioButtonId() != -1) {
+            RadioButton rb = (RadioButton)
+                    findViewById(rgStatus.getCheckedRadioButtonId());
+            hasil = rb.getText().toString();
+        }
+        if (hasil == null) {
+            tvHasil.setText("Anda belum memilih divisi");
+        }
         String nama = etNama.getText().toString();
-        String alasan = etAD.getText().toString();
         int umur = Integer.parseInt(etUmur.getText().toString());
 
 

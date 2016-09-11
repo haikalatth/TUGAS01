@@ -97,6 +97,7 @@
             android:text="Pilih divisi" />
 
         <RadioGroup
+            android:id="@+id/radioGroupStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
