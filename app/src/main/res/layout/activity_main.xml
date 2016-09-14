@@ -46,10 +46,10 @@
             android:text="Kelas" />
 
         <Spinner
-            android:id="@+id/spinnerKelas"
+            android:id="@+id/Kelas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/spinnerKelas" />
+            android:entries="@array/Kelas" />
 
         <TextView
             android:id="@+id/textView4"

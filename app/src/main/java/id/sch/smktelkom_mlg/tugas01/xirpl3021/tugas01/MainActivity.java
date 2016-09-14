@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         etUmur = (EditText) findViewById(R.id.editTextUmur);
         bDaftar = (Button) findViewById(R.id.buttonDaftar);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
-        spKelas = (Spinner) findViewById(R.id.spinnerKelas);
+        spKelas = (Spinner) findViewById(R.id.Kelas);
         rgStatus = (RadioGroup) findViewById(R.id.radioGroupStatus);
 
         bDaftar.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
         int umur = Integer.parseInt(etUmur.getText().toString());
 
 
-        tvHasil.setText(nama + " " + umur + " tahun" + " kelas" + spKelas.getSelectedItem().toString() + "\n" + "Siap mengikuti palwaga divisi");
+        tvHasil.setText(nama + " " + umur + " tahun" + " kelas " + spKelas.getSelectedItem().toString() + "\n" + "Siap mengikuti palwaga divisi " + hasil);
     }
 }
