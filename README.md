@@ -7,8 +7,12 @@ Aplikasi ini berisi form pendaftaran salah satu sub-organisasi di SMK Telkom Mal
 link file apk https://drive.google.com/open?id=0B_0b9b5w4kzUVkVhOEdpZllWWTA
 
 Nama    : Muhammad Haikal Atthoriq 
+
 Kelas   : XIRPL3 
+
 Absen   : 20 
+
 NIS     : 4789/1488.070 
+
 Sekolah : SMK Telkom Malang 
 
